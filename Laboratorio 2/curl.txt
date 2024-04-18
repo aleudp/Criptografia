@@ -1,0 +1,10 @@
+curl 'http://172.17.0.2/vulnerabilities/brute/?username=testápassword=testálogin=Login*' -—compressed
+-H 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86 64; rv:124.0) Gecko/20100101 Firefox/124.0'
+-H 'Accept: text/html, application/xhtml+xml,application/xml;q=0.9,image/avif, image/webp,*/*;q=0.8"
+-H 'Accept-Language: en-US,en;q=0.5D'
+-H 'Accept-Encoding: gzip, deflate'
+-H 'Connection: keep-alive'
+-H 'Referer: http://172.17.0.2/vulnerabilities/brute/'
+-H 'Cookie: PHPSESSID=q8ncf007050g9%b4msd0duq3is4; security=1ow'
+-H 'Upgrade-Insecure-Requests: 1'
+
