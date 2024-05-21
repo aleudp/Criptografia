@@ -1,0 +1,8 @@
+
+
+aircrack-ng captura-01.cap
+sudo airdecap-ng -w 12:34:56:78:90 captura-01.cap
+hashcat -m 22000 -a 0 --potfile-path=/home/alejandro/potfile.pot handshake.hc22000 rockyou_mod.dic
+hashcat -m 22000 -a 0 --potfile-disable handshake.hc22000 rockyou_mod.dic
+aircrack-ng -w rockyou_mod.dic handshake.pcap
+
