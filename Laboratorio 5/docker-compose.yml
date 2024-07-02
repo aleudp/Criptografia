@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+  c1s1:
+    build:
+      context: ./c1s1/
+    container_name: c1s1
+    networks:
+      - my_network
+    ports:
+      - "2222:22"
+
+  c2:
+    build:
+      context: ./c2/
+    container_name: c2
+    networks:
+      - my_network
+
+  c3:
+    build:
+      context: ./c3/
+    container_name: c3
+    networks:
+      - my_network
+
+  c4:
+    build:
+      context: ./c4/
+    container_name: c4
+    networks:
+      - my_network
+
+networks: 
+  my_network:
+    driver: bridge
+    driver_opts:
+      com.docker.network.bridge.name: cripto
